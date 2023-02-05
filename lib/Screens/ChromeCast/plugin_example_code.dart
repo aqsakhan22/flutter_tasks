@@ -91,7 +91,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 'Error: ${snapshot.error.toString()}',
               ),
             );
-          } else if (!snapshot.hasData) {
+          }
+
+          else if (!snapshot.hasData) {
             return Center(
               child: CircularProgressIndicator(),
             );
