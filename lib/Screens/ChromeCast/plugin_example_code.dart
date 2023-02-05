@@ -108,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void _sendMessageToYourApp(CastSession session) {
     print('_sendMessageToYourApp');
 
-    session.sendMessage('urn:x-cast:namespace-of-the-app', {
+    session.sendMessage('urn:x-cast:run-with-kt', {
       'type': 'sample',
     });
   }
@@ -139,7 +139,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     session.sendMessage(CastSession.kNamespaceReceiver, {
       'type': 'LAUNCH',
-      'appId': 'CC1AD845', // set the appId of your app here
+      'appId': '788D98F9', // set the appId of your app here
     });
   }
 
